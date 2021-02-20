@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { withRouter } from "react-router-dom";
 import axios from "axios";
 import CountryRate from "./countryRate";
+import SelectCountry from "./selectCountry";
 
 function Rate() {
   const [ratesdata, setRatesdata] = useState([]);
@@ -34,9 +35,14 @@ function Rate() {
         </div>
       ) : (
         <div>
-          {arr.map((rate, index) => {
-            <CountryRate key={index} rate={rate}></CountryRate>;
-          })}
+          <div className="country">
+            <h1>Country</h1>
+          </div>
+          <div>
+            {arr.map((rate, index) => (
+              <SelectCountry key={index} rate={rate}></SelectCountry>
+            ))}
+          </div>
         </div>
       )}
     </section>

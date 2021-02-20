@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import selectCountry from "./selectCountry";
+import SelectCountry from "./selectCountry";
 import Rate from "./rate";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/" component={selectCountry} />
+          <Route exact path="/" component={Rate} />
           <Route path="/rate" component={Rate} />
         </Switch>
       </div>
