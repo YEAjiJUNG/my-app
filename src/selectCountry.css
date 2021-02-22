@@ -1,13 +1,17 @@
-.box{
-    display: flex;
-    flex-direction: column;
+.box {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+}
+.inner_box {
+  margin-top: 30px;
+}
 
-}
-.title{
-    display: flex;
-    font-size: 25px;
-    font-weight: bold;
-}
-.inner_box{
-    margin-top: 30px;
+.rateValue {
+  color: red;
+  font-weight: bold;
 }

@@ -25,7 +25,9 @@ function SelectCountry({ rate }) {
           onChange={onChange}
         />
         {rate[0]}
-        <div>{checked ? <div>{rate[1]}</div> : <div></div>}</div>
+        <div>
+          {checked ? <div className="rateValue">{rate[1]}</div> : <div></div>}
+        </div>
       </div>
     </div>
   );
