@@ -19,8 +19,6 @@ function Rate() {
     } = await axios.get("https://api.exchangeratesapi.io/latest");
     setRatesdata(rates);
     setLoading(false);
-    //console.log("InRate", loading);
-    //console.log("InRate", ratesdata);
   };
   const arr = Object.entries(ratesdata);
 
